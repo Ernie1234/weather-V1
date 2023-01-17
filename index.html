@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="weather-display">
+        <div class="text-area">
+          <h1 class="title">D-Weather</h1>
+          <div class="weather__display--details">
+            <h2 class="degree">
+              <span class="degree__value">26</span><sup><small>o</small></sup>
+            </h2>
+            <div class="weather__location">
+              <h4 class="city">London</h4>
+              <h6 class="date">10:36 - 22 Oct 2022</h6>
+            </div>
+            <div class="weather__condition">
+              <span class="weatherIcon"></span>
+              <p class="description">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="weather-aside">
+        <div class="top">
+          <input
+            type="text"
+            placeholder="Another location"
+            class="search__input"
+          /><span class="btn"><i class="fa fa-search"></i></span>
+          <div class="row">
+            <p><span class="row-list">London</span></p>
+            <p><span class="row-list">Benin</span></p>
+            <p><span class="row-list">Amsterdam</span></p>
+            <p><span class="row-list">Abuja</span></p>
+          </div>
+        </div>
+        <div class="weather__details">
+          <h3>Weather Details</h3>
+          <div class="row">
+            <span class="row-title">Description</span
+            ><span class="row-value cloudy__value">12%</span>
+          </div>
+          <div class="row">
+            <span class="row-title">Humidity</span
+            ><span class="row-value humidity__value">78%</span>
+          </div>
+          <div class="row">
+            <span class="row-title">Wind speed</span
+            ><span class="row-value speed__value">12km/h</span>
+          </div>
+          <div class="row">
+            <span class="row-title">Pressure</span
+            ><span class="row-value pressure__value">0mm</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
